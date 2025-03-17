@@ -48,7 +48,7 @@ img {
     max-width: 38rem;
     margin: auto;
     padding: 0 1rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* loading */
@@ -130,6 +130,7 @@ img {
 .hero {
     height: 100vh;
     position: relative;
+    /* display: flex; */
 }
 .hero::after {
     content: '';
@@ -138,6 +139,7 @@ img {
     background: url('../images/bg-hero.jpg') no-repeat center / cover;
     position: absolute;
     inset: 0;
+    /* float: left; */
 }
 .hero .title {
     position: absolute;
@@ -154,11 +156,12 @@ img {
 .concept {
     margin: 8rem 0;
     background-image: linear-gradient(
-        to right,
+        to left,
         transparent 0%,
         transparent 20%,
-        var(--light-grey) 20%,
-        var(--light-grey) 100%
+        /* 색깔 그라데이션 */
+        var(--light-grey) 60%,
+        var(--light-green) 100%
     );
 }
 .concept p {
@@ -220,6 +223,7 @@ img {
     width: 90vw;
     left: 0;
     right: 0;
+    /* border: 2px solid black; */
 }
 .shop h3 {
     margin: 1rem 0;
@@ -262,6 +266,7 @@ img {
     .concept img {
         margin: -6rem 0;
         max-width: 38rem;
+        /* border: 2px solid black; */
     }
 
     /* gallery */
